@@ -1,0 +1,11 @@
+.table {
+    -fx-background-color: orange;
+}
+
+.table-row-cell {
+    fx-background-color: orange;
+}
+
+.table-row-cell:empty, .table-cell {
+    -fx-border-width: 0px;
+}

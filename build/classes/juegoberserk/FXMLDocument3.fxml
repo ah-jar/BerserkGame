@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="347.0" prefWidth="651.0" style="-fx-background-color: black;" stylesheets="@styles/newCascadeStyleSheet.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="juegoberserk.FXMLDocument3Controller">
+   <children>
+      <ImageView fx:id="escenario" fitHeight="348.0" fitWidth="678.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/shiva2.jpg" />
+         </image></ImageView>
+      <ProgressBar fx:id="pVida1" layoutX="35.0" layoutY="37.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="18.0" prefWidth="172.0" progress="1.0" style="-fx-background-color: grey;" />
+      <ProgressBar fx:id="pVida2" layoutX="464.0" layoutY="37.0" prefWidth="172.0" progress="1.0" />
+      <ImageView fx:id="iPersonaje2" fitHeight="183.0" fitWidth="353.0" layoutX="462.0" layoutY="135.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/gutsPelea.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iPersonaje1" fitHeight="183.0" fitWidth="353.0" layoutX="33.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/gutsPelea.png" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="pHabilidad1" layoutX="35.0" layoutY="66.0" prefHeight="18.0" prefWidth="90.0" progress="0.0" />
+      <ProgressBar fx:id="pHabilidad2" layoutX="546.0" layoutY="66.0" prefHeight="18.0" prefWidth="90.0" progress="0.0" />
+      <ImageView fx:id="iAtaque" fitHeight="38.0" fitWidth="35.0" layoutX="35.0" layoutY="91.0" onMouseClicked="#onAtacar" onMouseEntered="#onHover" onMouseExited="#onEndHover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/atacarBoton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iEspecial" fitHeight="38.0" fitWidth="35.0" layoutX="80.0" layoutY="91.0" onMouseClicked="#onAtacar" onMouseEntered="#onHover" onMouseExited="#onEndHover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/skullBoton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iAtaque2" fitHeight="38.0" fitWidth="35.0" layoutX="601.0" layoutY="91.0" onMouseClicked="#onAtacar" onMouseEntered="#onHover" onMouseExited="#onEndHover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/atacarBoton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iEspecial2" fitHeight="38.0" fitWidth="35.0" layoutX="556.0" layoutY="91.0" onMouseClicked="#onAtacar" onMouseEntered="#onHover" onMouseExited="#onEndHover" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/skullBoton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iAtaqueGif" fitHeight="132.0" fitWidth="153.0" layoutX="80.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Img/ataque.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iAtaqueGif1" fitHeight="132.0" fitWidth="153.0" layoutX="470.0" layoutY="144.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Img/ataque.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iAtaqueGif2" fitHeight="132.0" fitWidth="153.0" layoutX="480.0" layoutY="144.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Img/ataque.gif" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iAtaqueGif3" fitHeight="132.0" fitWidth="153.0" layoutX="80.0" layoutY="144.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Img/ataque.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="49.0" fitWidth="104.0" layoutX="281.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Img/pocho.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lInfo" alignment="CENTER" contentDisplay="CENTER" layoutX="289.0" layoutY="298.0" prefHeight="17.0" prefWidth="90.0">
+         <font>
+            <Font name="Impact" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="gifEspecial" fitHeight="348.0" fitWidth="678.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="green" fitHeight="28.0" fitWidth="11.0" layoutX="125.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Img/green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="green1" fitHeight="28.0" fitWidth="11.0" layoutX="531.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@Img/green.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iBack" disable="true" fitHeight="40.0" fitWidth="45.0" layoutX="59.0" layoutY="23.0" onMouseClicked="#onAtacar" onMouseEntered="#onHover" onMouseExited="#onEndHover" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="tabla" layoutX="345.0" layoutY="12.0" opacity="0.92" prefHeight="324.0" prefWidth="304.0" styleClass="table" visible="false">
+        <columns>
+          <TableColumn fx:id="columna1" prefWidth="75.0" text="Jugador 1" />
+          <TableColumn fx:id="columna2" prefWidth="75.0" text="Jugador 2" />
+            <TableColumn fx:id="columna3" prefWidth="75.0" text="Ganador" />
+            <TableColumn fx:id="columna4" prefWidth="75.0" text="Duración" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
